@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/scss/_reset.scss">
+    <link rel="stylesheet" href="assets/scss/_font.scss">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <title>Bonger</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="#" class="header__logo">
+                        <div class="header__logo-img">
+                            <img src="/assets/images/logo.svg" alt="logo">
+                        </div>
+                        <div class="header__logo-txt">
+                            <h1 class="header__txt-title">
+                                BONGER<span>.COM</span>
+                            </h1>
+                            <p class="header__txt-sub">
+                                Доставка по всей Москве
+                            </p>
+                        </div>
+                    </a>
+                    <div class="header__content">
+                        <div class="header__content-ico">
+                            <img class="header__ico-vk" src="/assets/images/icons/vk.svg" alt="vk">
+                            <img class="header__ico-telegram" src="/assets/images/icons/telegram.svg" alt="telegram">
+                            <img class="header__ico-inst" src="/assets/images/icons/inst.svg" alt="inst">
+                        </div>
+                        <div class="header__content-mail">
+                            <div class="header__mail-txt">
+                                <p class="header__mail-sub">Для предложений</p>
+                                <h3 class="header__mail-title">
+                                    info@bonger.com
+                                </h3>
+                            </div>
+                            <div class="header__mail-img">
+                                <img src="/assets/images/icons/@.svg" alt="@">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="nav" id="drop">
+            <div class="container">
+                <div class="nav__inner">
+                    <ul class="nav__inner-list">
+                        <button data-path="one" class="nav__inner-btn drop-item" onclick="myFunction()" class="nav__inner-item">
+                            <img src="/assets/images/catalog.svg" alt="">
+                            КАТАЛОГ
+                        </button>
+                        <li class="nav__inner-item">
+                            <a href="#">Главная</a>
+                        </li>
+                        <li class="nav__inner-item">
+                            <a href="#">Кастомизация</a>
+                        </li>
+                        <li class="nav__inner-item">
+                            <a href="#">Оплата</a>
+                        </li>
+                        <li class="nav__inner-item">
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li class="nav__inner-item">
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="dropdawn">
+            <div class="container">
+                <ul data-path="one" id="menu-drop" class="nav__drop" aria-labelledby="dropdownMenuButton">
+                    <li class="nav__drop-item">
+                        <a href="#">Все товары</a>
+                    </li>
+                    <li class="nav__drop-item">
+                        <a href="#">Бонги</a>
+                    </li>
+                    <li class="nav__drop-item">
+                        <a href="#">Худи</a>
+                    </li>
+                    <li class="nav__drop-item">
+                        <a href="#">Футболки</a>
+                    </li>
+                    <li class="nav__drop-item">
+                        <a href="#">Гриндеры</a>
+                    </li>
+                    <li class="nav__drop-item">
+                        <a href="#">Балаклавы</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+
+            <section class="popular">
+                <div class="container">
+                    <div class="popular__back">
+                        <div class="popular__inner">
+                            <div class="popular__item">
+                                <div class="popular__item-img">
+                                    <img src="/assets/images/Yoda.jpg" alt="">
+                                </div>
+                                <h3 class="popular__item-title">
+                                    BONG <span>CORTEZ</span>
+                                </h3>
+                                <p class="popular__item-subtitle">Покупок 142</p>
+                            </div>
+                            <div class="popular__item">
+                                <div class="popular__item-img">
+                                    <img src="/assets/images/Yoda.jpg" alt="">
+                                </div>
+                                <h3 class="popular__item-title">
+                                    BONG <span>4:20</span>
+                                </h3>
+                                <p class="popular__item-subtitle">Покупок: 365</p>
+                            </div>
+                            <div class="popular__item">
+                                <div class="popular__item-img">
+                                    <img src="/assets/images/Yoda.jpg" alt="">
+                                </div>
+                                <h3 class="popular__item-title">
+                                    BONG <span>BARBIE</span>
+                                </h3>
+                                <p class="popular__item-subtitle">Покупок: 18</p>
+                            </div>
+                            <div class="popular__item">
+                                <div class="popular__item-img">
+                                    <img src="/assets/images/Yoda.jpg" alt="">
+                                </div>
+                                <h3 class="popular__item-title">
+                                    BONG <span>HASL</span>
+                                </h3>
+                                <p class="popular__item-subtitle">Покупок: 23</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="products">
+                <div class="container">
+                    <div class="products__inner">
+                        <div class="products__head">
+                            <div class="products__head-cont">
+                                <img class="products__head-img" src="assets/images/crown-white.svg" alt="">
+                                <h3 class="products__head-title">
+                                    Товары
+                                </h3>
+                            </div>
+                            <div class="products__head-filter">
+                                <button class="products__filter-btn">Бонги</button>
+                                <button class="products__filter-btn">Гриндеры</button>
+                                <button class="products__filter-btn">Худи</button>
+                                <button class="products__filter-btn">Футболки</button>
+                                <button class="products__filter-btn">Балаклавы</button>
+                                <button class="products__filter-btn">Все</button>
+                            </div>
+                        </div>
+                        <div class="products__content">
+                            <div class="products__item">
+                                <div class="products__item-img">
+                                    <img src="/assets/images/Yoda.jpg" alt="" class="products__img">
+                                </div>
+                                <h3 class="products__item-title">BONG CORTEZ</h3>
+                                <div class="products__item-price">
+                                    1500
+                                    <img class="products__item-rub" src="/assets/images/icons/rub.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="products__item">
+                                <div class="products__item-img">
+                                    <img src="/assets/images/Yoda.jpg" alt="" class="products__img">
+                                </div>
+                                <h3 class="products__item-title">BONG 4:20</h3>
+                                <div class="products__item-price">
+                                    1500
+                                    <img class="products__item-rub" src="/assets/images/icons/rub.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="products__item">
+                                <div class="products__item-img">
+                                    <img src="/assets/images/Yoda.jpg" alt="" class="products__img">
+                                </div>
+                                <h3 class="products__item-title">BONG BARBIE</h3>
+                                <div class="products__item-price">
+                                    1500
+                                    <img class="products__item-rub" src="/assets/images/icons/rub.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="products__item">
+                                <div class="products__item-img">
+                                    <img src="/assets/images/Yoda.jpg" alt="" class="products__img">
+                                </div>
+                                <h3 class="products__item-title">BONG HASL</h3>
+                                <div class="products__item-price">
+                                    1500
+                                    <img class="products__item-rub" src="/assets/images/icons/rub.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="products__item">
+                                <div class="products__item-img">
+                                    <img src="/assets/images/Yoda.jpg" alt="" class="products__img">
+                                </div>
+                                <h3 class="products__item-title">BONG CORTEZ</h3>
+                                <div class="products__item-price">
+                                    1500
+                                    <img class="products__item-rub" src="/assets/images/icons/rub.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="products__item">
+                                <div class="products__item-img">
+                                    <img src="/assets/images/Yoda.jpg" alt="" class="products__img">
+                                </div>
+                                <h3 class="products__item-title">BONG 4:20</h3>
+                                <div class="products__item-price">
+                                    1500
+                                    <img class="products__item-rub" src="/assets/images/icons/rub.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="products__item">
+                                <div class="products__item-img">
+                                    <img src="/assets/images/Yoda.jpg" alt="" class="products__img">
+                                </div>
+                                <h3 class="products__item-title">BONG BARBIE</h3>
+                                <div class="products__item-price">
+                                    1500
+                                    <img class="products__item-rub" src="/assets/images/icons/rub.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="products__item">
+                                <div class="products__item-img">
+                                    <img src="/assets/images/Yoda.jpg" alt="" class="products__img">
+                                </div>
+                                <h3 class="products__item-title">BONG HASL</h3>
+                                <div class="products__item-price">
+                                    1500
+                                    <img class="products__item-rub" src="/assets/images/icons/rub.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="social">
+                <div class="container">
+                    <div class="social__inner">
+                        <a href="#" class="social__item">
+                            <img class="social__item-img" src="/assets/images/icons/vk.svg">
+                            <h2 class="social__item-title">
+                                Мы в <span>Вконтакте</span>
+                            </h2>
+                        </a>
+                        <a href="#" class="social__item">
+                            <img class="social__item-img" src="assets/images/icons/telegram.svg">
+                            <h2 class="social__item-title">
+                                Мы в <span>Телеграме</span>
+                            </h2>
+                        </a>
+                        <a href="#" class="social__item">
+                            <img class="social__item-img" src="assets/images/icons/inst.svg">
+                            <h2 class="social__item-title">
+                                Мы в <span>Инстаграме</span>
+                            </h2>
+                        </a>
+                        <a href="#" class="social__item">
+                            <img class="social__item-img" src="assets/images/site.svg">
+                            <h2 class="social__item-title">
+                                www.bonger.com
+                            </h2>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__nav">
+                        <div class="footer__nav-head">
+                            <img class="footer__head-img" src="/assets/images/icons/footer-nav.svg">
+                            <h4 class="footer__head-title">
+                                Навигация
+                            </h4>
+                        </div>
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item">
+                                <img class="footer__nav-img" src="/assets/images/icons/navigation.svg">
+                                <a href="#" class="footer__nav-link">
+                                    Список товаров
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <img class="footer__nav-img" src="/assets/images/icons/navigation.svg">
+                                <a href="#" class="footer__nav-link">
+                                    Кастомизация
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <img class="footer__nav-img" src="/assets/images/icons/navigation.svg">
+                                <a href="#" class="footer__nav-link">
+                                    Оплата
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <img class="footer__nav-img" src="/assets/images/icons/navigation.svg">
+                                <a href="#" class="footer__nav-link">
+                                    Доставка
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <img class="footer__nav-img" src="/assets/images/icons/navigation.svg">
+                                <a href="#" class="footer__nav-link">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__content">
+                        <a class="footer__logo" href="#" >
+                            <div class="footer__logo-img">
+                                <img src="/assets/images/logo.svg" alt="logo">
+                            </div>
+                            <div class="footer__logo-txt">
+                                <h1 class="footer__txt-title">
+                                    BONGER<span>.COM</span>
+                                </h1>
+                                <p class="footer__txt-sub">
+                                    Доставка по всей Москве
+                                </p>
+                            </div>
+                        </a>
+                        <div class="footer__content-text">
+                            <p>
+                                <span>Bonger.com</span> - Онлайн магазин с доставкой по Москве
+                            </p>
+                            <p>Мобильные бонги, гриндеры, худи, футболки, балаклавы
+                            </p>
+                            <p>Оплачивайте покупки удобными для Вас способами</p>
+                        </div>
+                        <div class="footer__content-payment">
+                            <img class="footer__payment" src="/assets/images/sbp.svg">
+                            <img class="footer__payment" src="/assets/images/visa.svg">
+                            <img class="footer__payment" src="/assets/images/master-card.svg">
+                        </div>
+                    </div>
+                    <div class="footer__qr">
+                        <img class="footer__qr-code" src="/assets/images/qr.svg">
+                        <div class="footer__qr-text">
+                            <p>Сделай <span>скрин</span></p>
+                            <img src="/assets/images/qr-smile.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="assets/js/main.js"></script>
+
+</body>

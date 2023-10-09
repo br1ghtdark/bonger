@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-style: normal;
+    src: local("Montserrat-Regular"),
+            url("../assets/fonts/Montserrat-Regular.woff2") format('woff2'),
+            url("../assets/fonts/Montserrat-Regular.woff") format('woff'),
+            url("../assets/fonts/Montserrat-Regular.eot") format('eot');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-style: normal;
+    src: local("Montserrat-SemiBold"),
+            url("../assets/fonts/Montserrat-Medium.woff2") format('woff2'),
+            url("../assets/fonts/Montserrat-Medium.woff") format('woff'),
+            url("../assets/fonts/Montserrat-Medium.eot") format('eot');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-style: normal;
+    src: local("Montserrat-SemiBold"),
+            url("../assets/fonts/Montserrat-SemiBold.woff2") format('woff2'),
+            url("../assets/fonts/Montserrat-SemiBold.woff") format('woff'),
+            url("../assets/fonts/Montserrat-SemiBold.eot") format('eot');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-style: normal;
+    src: local("Montserrat-Bold"),
+            url("../assets/fonts/Montserrat-Bold.woff2") format('woff2'),
+            url("../assets/fonts/Montserrat-Bold.woff") format('woff'),
+            url("../assets/fonts/Montserrat-Bold.eot") format('eot');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-style: normal;
+    src: local("Montserrat-ExtraBold"),
+            url("../assets/fonts/Montserrat-ExtraBold.woff2") format('woff2'),
+            url("../assets/fonts/Montserrat-ExtraBold.woff") format('woff'),
+            url("../assets/fonts/Montserrat-ExtraBold.eot") format('eot');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-style: italic;
+    src: local("Montserrat-ExtraBoldItalic"),
+            url("../assets/fonts/Montserrat-ExtraBoldItalic.woff2") format('woff2'),
+            url("../assets/fonts/Montserrat-ExtraBoldItalic.woff") format('woff'),
+            url("../assets/fonts/Montserrat-ExtraBoldItalic.eot") format('eot');
+    font-display: swap;
+}
+
+
